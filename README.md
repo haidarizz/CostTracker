@@ -5,6 +5,6 @@ KELOMPOK 7
 
 Anggota 1: Elza Natali Wijaya
 
-Anggota 2: Muhammad Haidar Izzuddin
+Anggota 2: Muhammad Haidar Izzuddin - 20/460554/TK/51143
 
 Anggota 3: Tasya Nafisah Kamal
