@@ -8,5 +8,6 @@ namespace CostTracker
 {
     internal class Dashboard
     {
+        public int id;
     }
 }
