@@ -8,6 +8,25 @@ namespace CostTracker
 {
     internal class Dashboard
     {
-        public int id;
+        public int incomeTotal;
+        public int expenseTotal;
+        public int balance;
+
+        public void addIncome()
+        {
+
+        }
+        public void addExpense()
+        {
+
+        }
+        public void viewIncome()
+        {
+
+        }
+        public void viewExpense()
+        {
+
+        }
     }
 }
