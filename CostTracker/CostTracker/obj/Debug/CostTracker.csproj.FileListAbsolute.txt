@@ -1,0 +1,11 @@
+C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\bin\Debug\CostTracker.exe.config
+C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\bin\Debug\CostTracker.exe
+C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\bin\Debug\CostTracker.pdb
+C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.csproj.AssemblyReference.cache
+C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.Dashboard.resources
+C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.Login.resources
+C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.Properties.Resources.resources
+C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.csproj.GenerateResource.cache
+C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.csproj.CoreCompileInputs.cache
+C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.exe
+C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.pdb
