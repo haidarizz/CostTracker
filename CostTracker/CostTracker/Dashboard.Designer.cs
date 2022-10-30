@@ -105,7 +105,7 @@ namespace CostTracker
             this.lblUser.ForeColor = System.Drawing.Color.White;
             this.lblUser.Location = new System.Drawing.Point(1003, 66);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(157, 44);
+            this.lblUser.Size = new System.Drawing.Size(152, 43);
             this.lblUser.TabIndex = 4;
             this.lblUser.Text = "Hi, User!";
             // 
@@ -122,6 +122,7 @@ namespace CostTracker
             // 
             // boxExpenses
             // 
+            this.boxExpenses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.boxExpenses.Image = ((System.Drawing.Image)(resources.GetObject("boxExpenses.Image")));
             this.boxExpenses.Location = new System.Drawing.Point(803, 237);
             this.boxExpenses.Name = "boxExpenses";
