@@ -28,7 +28,7 @@ namespace CostTracker
         }
 
         private void pbExpenses_Click(object sender, EventArgs e)
-        {
+    {
 
         }
 
