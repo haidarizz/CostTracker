@@ -27,3 +27,7 @@ C:\Users\elnat\Source\Repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTr
 C:\Users\LENOVO\Documents\GitHub\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.AddExpenses.resources
 C:\Users\LENOVO\Documents\GitHub\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.ViewExpenses.resources
 C:\Users\LENOVO\Documents\GitHub\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.ViewIncome.resources
+C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.AddExpenses.resources
+C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.Logout.resources
+C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.SignUp.resources
+C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.ViewIncome.resources
