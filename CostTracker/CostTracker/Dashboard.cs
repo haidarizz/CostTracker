@@ -24,7 +24,9 @@ namespace CostTracker
 
         private void pbIncome_Click(object sender, EventArgs e)
         {
-
+            ViewIncome viewincome = new ViewIncome();
+            viewincome.Show();
+            this.Hide();
         }
 
         private void pbExpenses_Click(object sender, EventArgs e)
@@ -48,7 +50,9 @@ namespace CostTracker
 
         private void btExpenses_Click(object sender, EventArgs e)
         {
-
+            AddExpenses addexpenses = new AddExpenses();
+            addexpenses.Show();
+            this.Hide();
         }
 
         private void boxBalance_Click(object sender, EventArgs e)
