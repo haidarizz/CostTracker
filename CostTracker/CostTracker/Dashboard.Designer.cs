@@ -55,9 +55,10 @@ namespace CostTracker
             // 
             this.pbHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
             this.pbHome.Image = ((System.Drawing.Image)(resources.GetObject("pbHome.Image")));
-            this.pbHome.Location = new System.Drawing.Point(76, 178);
+            this.pbHome.Location = new System.Drawing.Point(57, 145);
+            this.pbHome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbHome.Name = "pbHome";
-            this.pbHome.Size = new System.Drawing.Size(160, 125);
+            this.pbHome.Size = new System.Drawing.Size(120, 102);
             this.pbHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbHome.TabIndex = 0;
             this.pbHome.TabStop = false;
@@ -67,9 +68,10 @@ namespace CostTracker
             // 
             this.pbIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
             this.pbIncome.Image = ((System.Drawing.Image)(resources.GetObject("pbIncome.Image")));
-            this.pbIncome.Location = new System.Drawing.Point(72, 334);
+            this.pbIncome.Location = new System.Drawing.Point(54, 271);
+            this.pbIncome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbIncome.Name = "pbIncome";
-            this.pbIncome.Size = new System.Drawing.Size(170, 120);
+            this.pbIncome.Size = new System.Drawing.Size(128, 98);
             this.pbIncome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbIncome.TabIndex = 1;
             this.pbIncome.TabStop = false;
@@ -78,9 +80,10 @@ namespace CostTracker
             // pbExpenses
             // 
             this.pbExpenses.Image = ((System.Drawing.Image)(resources.GetObject("pbExpenses.Image")));
-            this.pbExpenses.Location = new System.Drawing.Point(72, 483);
+            this.pbExpenses.Location = new System.Drawing.Point(54, 392);
+            this.pbExpenses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbExpenses.Name = "pbExpenses";
-            this.pbExpenses.Size = new System.Drawing.Size(170, 150);
+            this.pbExpenses.Size = new System.Drawing.Size(128, 122);
             this.pbExpenses.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbExpenses.TabIndex = 2;
             this.pbExpenses.TabStop = false;
@@ -89,9 +92,10 @@ namespace CostTracker
             // pbLogout
             // 
             this.pbLogout.Image = ((System.Drawing.Image)(resources.GetObject("pbLogout.Image")));
-            this.pbLogout.Location = new System.Drawing.Point(104, 669);
+            this.pbLogout.Location = new System.Drawing.Point(78, 544);
+            this.pbLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbLogout.Name = "pbLogout";
-            this.pbLogout.Size = new System.Drawing.Size(104, 55);
+            this.pbLogout.Size = new System.Drawing.Size(78, 45);
             this.pbLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbLogout.TabIndex = 3;
             this.pbLogout.TabStop = false;
@@ -103,9 +107,10 @@ namespace CostTracker
             this.lblUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.lblUser.Font = new System.Drawing.Font("Microsoft PhagsPa", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUser.ForeColor = System.Drawing.Color.White;
-            this.lblUser.Location = new System.Drawing.Point(1003, 66);
+            this.lblUser.Location = new System.Drawing.Point(752, 54);
+            this.lblUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(152, 43);
+            this.lblUser.Size = new System.Drawing.Size(125, 36);
             this.lblUser.TabIndex = 4;
             this.lblUser.Text = "Hi, User!";
             // 
@@ -113,9 +118,10 @@ namespace CostTracker
             // 
             this.boxIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.boxIncome.Image = ((System.Drawing.Image)(resources.GetObject("boxIncome.Image")));
-            this.boxIncome.Location = new System.Drawing.Point(370, 237);
+            this.boxIncome.Location = new System.Drawing.Point(278, 193);
+            this.boxIncome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.boxIncome.Name = "boxIncome";
-            this.boxIncome.Size = new System.Drawing.Size(400, 250);
+            this.boxIncome.Size = new System.Drawing.Size(300, 203);
             this.boxIncome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.boxIncome.TabIndex = 5;
             this.boxIncome.TabStop = false;
@@ -124,9 +130,10 @@ namespace CostTracker
             // 
             this.boxExpenses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.boxExpenses.Image = ((System.Drawing.Image)(resources.GetObject("boxExpenses.Image")));
-            this.boxExpenses.Location = new System.Drawing.Point(803, 237);
+            this.boxExpenses.Location = new System.Drawing.Point(602, 193);
+            this.boxExpenses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.boxExpenses.Name = "boxExpenses";
-            this.boxExpenses.Size = new System.Drawing.Size(400, 250);
+            this.boxExpenses.Size = new System.Drawing.Size(300, 203);
             this.boxExpenses.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.boxExpenses.TabIndex = 6;
             this.boxExpenses.TabStop = false;
@@ -135,9 +142,10 @@ namespace CostTracker
             // 
             this.boxBalance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.boxBalance.Image = ((System.Drawing.Image)(resources.GetObject("boxBalance.Image")));
-            this.boxBalance.Location = new System.Drawing.Point(636, 533);
+            this.boxBalance.Location = new System.Drawing.Point(477, 433);
+            this.boxBalance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.boxBalance.Name = "boxBalance";
-            this.boxBalance.Size = new System.Drawing.Size(300, 100);
+            this.boxBalance.Size = new System.Drawing.Size(225, 81);
             this.boxBalance.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.boxBalance.TabIndex = 7;
             this.boxBalance.TabStop = false;
@@ -147,9 +155,10 @@ namespace CostTracker
             // 
             this.btIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(205)))), ((int)(((byte)(150)))));
             this.btIncome.Image = ((System.Drawing.Image)(resources.GetObject("btIncome.Image")));
-            this.btIncome.Location = new System.Drawing.Point(665, 379);
+            this.btIncome.Location = new System.Drawing.Point(499, 308);
+            this.btIncome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btIncome.Name = "btIncome";
-            this.btIncome.Size = new System.Drawing.Size(75, 75);
+            this.btIncome.Size = new System.Drawing.Size(56, 61);
             this.btIncome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btIncome.TabIndex = 8;
             this.btIncome.TabStop = false;
@@ -159,9 +168,10 @@ namespace CostTracker
             // 
             this.btExpenses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(99)))), ((int)(((byte)(87)))));
             this.btExpenses.Image = ((System.Drawing.Image)(resources.GetObject("btExpenses.Image")));
-            this.btExpenses.Location = new System.Drawing.Point(1095, 379);
+            this.btExpenses.Location = new System.Drawing.Point(821, 308);
+            this.btExpenses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btExpenses.Name = "btExpenses";
-            this.btExpenses.Size = new System.Drawing.Size(75, 75);
+            this.btExpenses.Size = new System.Drawing.Size(56, 61);
             this.btExpenses.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btExpenses.TabIndex = 9;
             this.btExpenses.TabStop = false;
@@ -169,12 +179,12 @@ namespace CostTracker
             // 
             // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1262, 753);
+            this.ClientSize = new System.Drawing.Size(946, 570);
             this.Controls.Add(this.btExpenses);
             this.Controls.Add(this.btIncome);
             this.Controls.Add(this.boxBalance);
@@ -185,6 +195,7 @@ namespace CostTracker
             this.Controls.Add(this.pbExpenses);
             this.Controls.Add(this.pbIncome);
             this.Controls.Add(this.pbHome);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Dashboard";
             this.Text = "Dashboard";
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).EndInit();

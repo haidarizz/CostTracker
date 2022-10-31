@@ -10,24 +10,24 @@ using System.Windows.Forms;
 
 namespace CostTracker
 {
-    public partial class Login : Form
+    public partial class SignUp : Form
     {
-        public Login()
+        public SignUp()
         {
             InitializeComponent();
         }
 
-        private void btLogin_Click(object sender, EventArgs e)
+        private void btSignup_Click(object sender, EventArgs e)
         {
             Dashboard dashboard = new Dashboard();
             dashboard.Show();
             this.Hide();
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void lblback_Click(object sender, EventArgs e)
         {
-            SignUp signup = new SignUp();
-            signup.Show();
+            Login login = new Login();
+            login.Show();
             this.Hide();
         }
     }

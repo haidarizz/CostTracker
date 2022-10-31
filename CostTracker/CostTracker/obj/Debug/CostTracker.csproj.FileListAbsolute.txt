@@ -9,3 +9,17 @@ C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTr
 C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.csproj.CoreCompileInputs.cache
 C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.exe
 C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.pdb
+D:\Semester5\JuniorProject\CostTracker\CostTracker\CostTracker\CostTracker\CostTracker\bin\Debug\CostTracker.exe.config
+D:\Semester5\JuniorProject\CostTracker\CostTracker\CostTracker\CostTracker\CostTracker\bin\Debug\CostTracker.exe
+D:\Semester5\JuniorProject\CostTracker\CostTracker\CostTracker\CostTracker\CostTracker\bin\Debug\CostTracker.pdb
+D:\Semester5\JuniorProject\CostTracker\CostTracker\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.csproj.AssemblyReference.cache
+D:\Semester5\JuniorProject\CostTracker\CostTracker\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.csproj.SuggestedBindingRedirects.cache
+D:\Semester5\JuniorProject\CostTracker\CostTracker\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.Dashboard.resources
+D:\Semester5\JuniorProject\CostTracker\CostTracker\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.Login.resources
+D:\Semester5\JuniorProject\CostTracker\CostTracker\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.Logout.resources
+D:\Semester5\JuniorProject\CostTracker\CostTracker\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.Properties.Resources.resources
+D:\Semester5\JuniorProject\CostTracker\CostTracker\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.csproj.GenerateResource.cache
+D:\Semester5\JuniorProject\CostTracker\CostTracker\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.csproj.CoreCompileInputs.cache
+D:\Semester5\JuniorProject\CostTracker\CostTracker\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.exe
+D:\Semester5\JuniorProject\CostTracker\CostTracker\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.pdb
+D:\Semester5\JuniorProject\CostTracker\CostTracker\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.SignUp.resources
