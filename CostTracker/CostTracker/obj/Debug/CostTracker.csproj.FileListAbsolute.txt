@@ -9,3 +9,16 @@ C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTr
 C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.csproj.CoreCompileInputs.cache
 C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.exe
 C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.pdb
+C:\Users\LENOVO\Documents\GitHub\CostTracker\CostTracker\CostTracker\bin\Debug\CostTracker.exe.config
+C:\Users\LENOVO\Documents\GitHub\CostTracker\CostTracker\CostTracker\bin\Debug\CostTracker.exe
+C:\Users\LENOVO\Documents\GitHub\CostTracker\CostTracker\CostTracker\bin\Debug\CostTracker.pdb
+C:\Users\LENOVO\Documents\GitHub\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Documents\GitHub\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.csproj.SuggestedBindingRedirects.cache
+C:\Users\LENOVO\Documents\GitHub\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.AddIncome.resources
+C:\Users\LENOVO\Documents\GitHub\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.Dashboard.resources
+C:\Users\LENOVO\Documents\GitHub\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.Login.resources
+C:\Users\LENOVO\Documents\GitHub\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.Properties.Resources.resources
+C:\Users\LENOVO\Documents\GitHub\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.csproj.GenerateResource.cache
+C:\Users\LENOVO\Documents\GitHub\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Documents\GitHub\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.exe
+C:\Users\LENOVO\Documents\GitHub\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.pdb
