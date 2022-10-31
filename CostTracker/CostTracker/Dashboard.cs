@@ -28,8 +28,10 @@ namespace CostTracker
         }
 
         private void pbExpenses_Click(object sender, EventArgs e)
-    {
-
+        {
+            ViewExpenses viewexpenses = new ViewExpenses();
+            viewexpenses.Show();
+            this.Hide();
         }
 
         private void pbLogout_Click(object sender, EventArgs e)

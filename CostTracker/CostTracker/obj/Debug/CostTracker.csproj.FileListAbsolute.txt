@@ -22,3 +22,5 @@ C:\Users\LENOVO\Documents\GitHub\CostTracker\CostTracker\CostTracker\obj\Debug\C
 C:\Users\LENOVO\Documents\GitHub\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.csproj.CoreCompileInputs.cache
 C:\Users\LENOVO\Documents\GitHub\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.exe
 C:\Users\LENOVO\Documents\GitHub\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.pdb
+C:\Users\elnat\Source\Repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.AddIncome.resources
+C:\Users\elnat\Source\Repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.ViewExpenses.resources
