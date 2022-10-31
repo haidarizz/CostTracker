@@ -1,6 +1,6 @@
 ﻿namespace CostTracker
 {
-    partial class AddIncome
+    partial class AddExpenses
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddIncome));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddExpenses));
             this.pbHome = new System.Windows.Forms.PictureBox();
             this.pbIncome = new System.Windows.Forms.PictureBox();
             this.pbExpenses = new System.Windows.Forms.PictureBox();
@@ -40,10 +40,10 @@
             this.lblNote = new System.Windows.Forms.Label();
             this.dtpDate = new System.Windows.Forms.DateTimePicker();
             this.tbAmount = new System.Windows.Forms.TextBox();
-            this.tbNote = new System.Windows.Forms.TextBox();
-            this.btnSaveIncome = new System.Windows.Forms.Button();
             this.lbSource = new System.Windows.Forms.ListBox();
             this.lbCategory = new System.Windows.Forms.ListBox();
+            this.tbNote = new System.Windows.Forms.TextBox();
+            this.btnSaveExpenses = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbIncome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExpenses)).BeginInit();
@@ -97,7 +97,7 @@
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.lblDate.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F);
             this.lblDate.ForeColor = System.Drawing.Color.White;
             this.lblDate.Location = new System.Drawing.Point(417, 108);
             this.lblDate.Name = "lblDate";
@@ -109,7 +109,7 @@
             // 
             this.lblAmount.AutoSize = true;
             this.lblAmount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.lblAmount.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAmount.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F);
             this.lblAmount.ForeColor = System.Drawing.Color.White;
             this.lblAmount.Location = new System.Drawing.Point(417, 249);
             this.lblAmount.Name = "lblAmount";
@@ -121,7 +121,7 @@
             // 
             this.lblAccount.AutoSize = true;
             this.lblAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.lblAccount.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccount.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F);
             this.lblAccount.ForeColor = System.Drawing.Color.White;
             this.lblAccount.Location = new System.Drawing.Point(837, 108);
             this.lblAccount.Name = "lblAccount";
@@ -133,7 +133,7 @@
             // 
             this.lblCategory.AutoSize = true;
             this.lblCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.lblCategory.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategory.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F);
             this.lblCategory.ForeColor = System.Drawing.Color.White;
             this.lblCategory.Location = new System.Drawing.Point(837, 249);
             this.lblCategory.Name = "lblCategory";
@@ -145,7 +145,7 @@
             // 
             this.lblNote.AutoSize = true;
             this.lblNote.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.lblNote.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNote.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F);
             this.lblNote.ForeColor = System.Drawing.Color.White;
             this.lblNote.Location = new System.Drawing.Point(417, 411);
             this.lblNote.Name = "lblNote";
@@ -160,7 +160,7 @@
             this.dtpDate.Location = new System.Drawing.Point(426, 178);
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Size = new System.Drawing.Size(333, 45);
-            this.dtpDate.TabIndex = 9;
+            this.dtpDate.TabIndex = 10;
             // 
             // tbAmount
             // 
@@ -169,30 +169,7 @@
             this.tbAmount.Location = new System.Drawing.Point(426, 324);
             this.tbAmount.Name = "tbAmount";
             this.tbAmount.Size = new System.Drawing.Size(333, 45);
-            this.tbAmount.TabIndex = 10;
-            // 
-            // tbNote
-            // 
-            this.tbNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F);
-            this.tbNote.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.tbNote.Location = new System.Drawing.Point(426, 483);
-            this.tbNote.Name = "tbNote";
-            this.tbNote.Size = new System.Drawing.Size(753, 45);
-            this.tbNote.TabIndex = 13;
-            // 
-            // btnSaveIncome
-            // 
-            this.btnSaveIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(205)))), ((int)(((byte)(150)))));
-            this.btnSaveIncome.Font = new System.Drawing.Font("Microsoft PhagsPa", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveIncome.ForeColor = System.Drawing.Color.White;
-            this.btnSaveIncome.Location = new System.Drawing.Point(648, 591);
-            this.btnSaveIncome.Margin = new System.Windows.Forms.Padding(1);
-            this.btnSaveIncome.Name = "btnSaveIncome";
-            this.btnSaveIncome.Size = new System.Drawing.Size(313, 67);
-            this.btnSaveIncome.TabIndex = 14;
-            this.btnSaveIncome.Text = "Save Income";
-            this.btnSaveIncome.UseVisualStyleBackColor = false;
-            this.btnSaveIncome.Click += new System.EventHandler(this.btnSaveIncome_Click);
+            this.tbAmount.TabIndex = 11;
             // 
             // lbSource
             // 
@@ -214,7 +191,7 @@
             this.lbSource.Name = "lbSource";
             this.lbSource.ScrollAlwaysVisible = true;
             this.lbSource.Size = new System.Drawing.Size(333, 50);
-            this.lbSource.TabIndex = 15;
+            this.lbSource.TabIndex = 12;
             // 
             // lbCategory
             // 
@@ -225,19 +202,45 @@
             this.lbCategory.IntegralHeight = false;
             this.lbCategory.ItemHeight = 42;
             this.lbCategory.Items.AddRange(new object[] {
-            "Allowance",
-            "Cashback",
+            "Transportation",
+            "Food and Beverage",
+            "Beauty",
+            "Household",
+            "Hobbies and Entertainment",
+            "Loans",
+            "Bills",
             "Gift",
-            "Income",
-            "Salary",
-            "Unexpected"});
+            "Education"});
             this.lbCategory.Location = new System.Drawing.Point(846, 324);
             this.lbCategory.Name = "lbCategory";
             this.lbCategory.ScrollAlwaysVisible = true;
             this.lbCategory.Size = new System.Drawing.Size(333, 50);
-            this.lbCategory.TabIndex = 16;
+            this.lbCategory.TabIndex = 13;
             // 
-            // AddIncome
+            // tbNote
+            // 
+            this.tbNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F);
+            this.tbNote.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.tbNote.Location = new System.Drawing.Point(426, 483);
+            this.tbNote.Name = "tbNote";
+            this.tbNote.Size = new System.Drawing.Size(753, 45);
+            this.tbNote.TabIndex = 14;
+            // 
+            // btnSaveExpenses
+            // 
+            this.btnSaveExpenses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(99)))), ((int)(((byte)(87)))));
+            this.btnSaveExpenses.Font = new System.Drawing.Font("Microsoft PhagsPa", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveExpenses.ForeColor = System.Drawing.Color.White;
+            this.btnSaveExpenses.Location = new System.Drawing.Point(648, 591);
+            this.btnSaveExpenses.Margin = new System.Windows.Forms.Padding(1);
+            this.btnSaveExpenses.Name = "btnSaveExpenses";
+            this.btnSaveExpenses.Size = new System.Drawing.Size(313, 67);
+            this.btnSaveExpenses.TabIndex = 15;
+            this.btnSaveExpenses.Text = "Save Expense";
+            this.btnSaveExpenses.UseVisualStyleBackColor = false;
+            this.btnSaveExpenses.Click += new System.EventHandler(this.btnSaveExpenses_Click);
+            // 
+            // AddExpenses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -245,10 +248,10 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1262, 753);
+            this.Controls.Add(this.btnSaveExpenses);
+            this.Controls.Add(this.tbNote);
             this.Controls.Add(this.lbCategory);
             this.Controls.Add(this.lbSource);
-            this.Controls.Add(this.btnSaveIncome);
-            this.Controls.Add(this.tbNote);
             this.Controls.Add(this.tbAmount);
             this.Controls.Add(this.dtpDate);
             this.Controls.Add(this.lblNote);
@@ -260,8 +263,8 @@
             this.Controls.Add(this.pbExpenses);
             this.Controls.Add(this.pbIncome);
             this.Controls.Add(this.pbHome);
-            this.Name = "AddIncome";
-            this.Text = "AddIncome";
+            this.Name = "AddExpenses";
+            this.Text = "AddExpenses";
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbIncome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExpenses)).EndInit();
@@ -284,9 +287,9 @@
         private System.Windows.Forms.Label lblNote;
         private System.Windows.Forms.DateTimePicker dtpDate;
         private System.Windows.Forms.TextBox tbAmount;
-        private System.Windows.Forms.TextBox tbNote;
-        private System.Windows.Forms.Button btnSaveIncome;
         private System.Windows.Forms.ListBox lbSource;
         private System.Windows.Forms.ListBox lbCategory;
+        private System.Windows.Forms.TextBox tbNote;
+        private System.Windows.Forms.Button btnSaveExpenses;
     }
 }

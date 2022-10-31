@@ -10,21 +10,21 @@ using System.Windows.Forms;
 
 namespace CostTracker
 {
-    public partial class AddIncome : Form
+    public partial class AddExpenses : Form
     {
-        public AddIncome()
+        public AddExpenses()
         {
             InitializeComponent();
         }
 
-        private void pbHome_Click(object sender, EventArgs e)
+        private void btnSaveExpenses_Click(object sender, EventArgs e)
         {
             Dashboard dashboard = new Dashboard();
             dashboard.Show();
             this.Hide();
         }
 
-        private void btnSaveIncome_Click(object sender, EventArgs e)
+        private void pbHome_Click(object sender, EventArgs e)
         {
             Dashboard dashboard = new Dashboard();
             dashboard.Show();
