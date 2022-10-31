@@ -39,7 +39,9 @@ namespace CostTracker
 
         private void btIncome_Click(object sender, EventArgs e)
         {
-
+            AddIncome addincome = new AddIncome();
+            addincome.Show();
+            this.Hide();
         }
 
         private void btExpenses_Click(object sender, EventArgs e)
