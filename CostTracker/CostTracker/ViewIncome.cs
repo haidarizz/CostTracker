@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CostTracker
 {
-    public partial class ViewExpenses : Form
+    public partial class ViewIncome : Form
     {
-        public ViewExpenses()
+        public ViewIncome()
         {
             InitializeComponent();
         }
@@ -24,10 +24,10 @@ namespace CostTracker
             this.Hide();
         }
 
-        private void pbIncome_Click(object sender, EventArgs e)
+        private void pbExpenses_Click(object sender, EventArgs e)
         {
-            ViewIncome viewincome = new ViewIncome();
-            viewincome.Show();
+            ViewExpenses viewexpenses = new ViewExpenses();
+            viewexpenses.Show();
             this.Hide();
         }
     }
