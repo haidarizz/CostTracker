@@ -30,5 +30,12 @@ namespace CostTracker
             viewincome.Show();
             this.Hide();
         }
+
+        private void pbLogout_Click(object sender, EventArgs e)
+        {
+            Logout logout = new Logout();
+            logout.Show();
+            this.Hide();
+        }
     }
 }

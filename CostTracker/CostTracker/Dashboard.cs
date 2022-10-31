@@ -38,7 +38,9 @@ namespace CostTracker
 
         private void pbLogout_Click(object sender, EventArgs e)
         {
-
+            Logout logout = new Logout();
+            logout.Show();
+            this.Hide();
         }
 
         private void btIncome_Click(object sender, EventArgs e)
