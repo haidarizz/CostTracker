@@ -20,9 +20,18 @@ namespace CostTracker
 
         private void btSignup_Click(object sender, EventArgs e)
         {
-            Dashboard dashboard = new Dashboard();
-            dashboard.Show();
-            this.Hide();
+            User user = new User();
+            try
+            {
+                user.signUp(tbNama.Text, tbEmail.Text, tbPassword.Text);
+                this.Hide();
+                Login login = new Login();
+                login.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Gagal membuat akun!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void lblback_Click(object sender, EventArgs e)
