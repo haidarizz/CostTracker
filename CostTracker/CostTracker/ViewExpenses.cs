@@ -10,30 +10,34 @@ using System.Windows.Forms;
 
 namespace CostTracker
 {
-    public partial class ViewExpenses : Form
+    partial class ViewExpenses : Form
     {
-        public ViewExpenses()
+        public User Pengguna;
+        public ViewExpenses(User pengguna)
         {
             InitializeComponent();
+            Pengguna = pengguna;
+            string id_user = Pengguna.ID_user;
+            string name = Pengguna.Name;
         }
 
         private void pbHome_Click(object sender, EventArgs e)
         {
-            Dashboard dashboard = new Dashboard();
+            Dashboard dashboard = new Dashboard(Pengguna);
             dashboard.Show();
             this.Hide();
         }
 
         private void pbIncome_Click(object sender, EventArgs e)
         {
-            ViewIncome viewincome = new ViewIncome();
+            ViewIncome viewincome = new ViewIncome(Pengguna);
             viewincome.Show();
             this.Hide();
         }
 
         private void pbLogout_Click(object sender, EventArgs e)
         {
-            Logout logout = new Logout();
+            Logout logout = new Logout(Pengguna);
             logout.Show();
             this.Hide();
         }

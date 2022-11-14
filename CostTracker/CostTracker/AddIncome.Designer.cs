@@ -42,7 +42,7 @@
             this.tbAmount = new System.Windows.Forms.TextBox();
             this.tbNote = new System.Windows.Forms.TextBox();
             this.btnSaveIncome = new System.Windows.Forms.Button();
-            this.lbSource = new System.Windows.Forms.ListBox();
+            this.lbAccount = new System.Windows.Forms.ListBox();
             this.lbCategory = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbIncome)).BeginInit();
@@ -195,27 +195,27 @@
             this.btnSaveIncome.UseVisualStyleBackColor = false;
             this.btnSaveIncome.Click += new System.EventHandler(this.btnSaveIncome_Click);
             // 
-            // lbSource
+            // lbAccount
             // 
-            this.lbSource.AllowDrop = true;
-            this.lbSource.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSource.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.lbSource.FormattingEnabled = true;
-            this.lbSource.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbSource.IntegralHeight = false;
-            this.lbSource.ItemHeight = 42;
-            this.lbSource.Items.AddRange(new object[] {
+            this.lbAccount.AllowDrop = true;
+            this.lbAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.lbAccount.FormattingEnabled = true;
+            this.lbAccount.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lbAccount.IntegralHeight = false;
+            this.lbAccount.ItemHeight = 42;
+            this.lbAccount.Items.AddRange(new object[] {
             "Accounts",
             "Cash",
             "Credit Card",
             "Debit Card",
             "eMoney",
             "Savings"});
-            this.lbSource.Location = new System.Drawing.Point(846, 178);
-            this.lbSource.Name = "lbSource";
-            this.lbSource.ScrollAlwaysVisible = true;
-            this.lbSource.Size = new System.Drawing.Size(333, 50);
-            this.lbSource.TabIndex = 15;
+            this.lbAccount.Location = new System.Drawing.Point(846, 178);
+            this.lbAccount.Name = "lbAccount";
+            this.lbAccount.ScrollAlwaysVisible = true;
+            this.lbAccount.Size = new System.Drawing.Size(333, 50);
+            this.lbAccount.TabIndex = 15;
             // 
             // lbCategory
             // 
@@ -247,7 +247,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1262, 753);
             this.Controls.Add(this.lbCategory);
-            this.Controls.Add(this.lbSource);
+            this.Controls.Add(this.lbAccount);
             this.Controls.Add(this.btnSaveIncome);
             this.Controls.Add(this.tbNote);
             this.Controls.Add(this.tbAmount);
@@ -263,6 +263,7 @@
             this.Controls.Add(this.pbHome);
             this.Name = "AddIncome";
             this.Text = "AddIncome";
+            this.Load += new System.EventHandler(this.AddIncome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbIncome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExpenses)).EndInit();
@@ -287,7 +288,7 @@
         private System.Windows.Forms.TextBox tbAmount;
         private System.Windows.Forms.TextBox tbNote;
         private System.Windows.Forms.Button btnSaveIncome;
-        private System.Windows.Forms.ListBox lbSource;
+        private System.Windows.Forms.ListBox lbAccount;
         private System.Windows.Forms.ListBox lbCategory;
     }
 }

@@ -48,7 +48,7 @@
             this.lblNama.Location = new System.Drawing.Point(616, 55);
             this.lblNama.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNama.Name = "lblNama";
-            this.lblNama.Size = new System.Drawing.Size(144, 57);
+            this.lblNama.Size = new System.Drawing.Size(141, 55);
             this.lblNama.TabIndex = 0;
             this.lblNama.Text = "Nama";
             // 
@@ -80,8 +80,8 @@
             this.lblEmail.ForeColor = System.Drawing.Color.White;
             this.lblEmail.Location = new System.Drawing.Point(616, 215);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblEmail.Name = "lblEmail2";
-            this.lblEmail.Size = new System.Drawing.Size(134, 57);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(131, 55);
             this.lblEmail.TabIndex = 3;
             this.lblEmail.Text = "Email";
             // 
@@ -103,8 +103,8 @@
             this.lblPassword.ForeColor = System.Drawing.Color.White;
             this.lblPassword.Location = new System.Drawing.Point(616, 375);
             this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblPassword.Name = "lblPassword2";
-            this.lblPassword.Size = new System.Drawing.Size(216, 57);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(211, 55);
             this.lblPassword.TabIndex = 5;
             this.lblPassword.Text = "Password";
             // 
@@ -150,9 +150,10 @@
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.tbNama);
             this.Controls.Add(this.lblNama);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SignUp";
             this.Text = "SignUp";
+            this.Load += new System.EventHandler(this.SignUp_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
