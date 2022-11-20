@@ -39,7 +39,6 @@ namespace CostTracker
                 {
                     MessageBox.Show("Sign Up Berhasil!", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     conn.Close();
-                    //btnLoaddata.PerformClick();
                     tbNama.Text = tbEmail.Text = tbPassword.Text = null;
                     Login login = new Login();
                     login.Show();

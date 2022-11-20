@@ -34,14 +34,14 @@ namespace CostTracker
             this.pbIncome = new System.Windows.Forms.PictureBox();
             this.pbExpenses = new System.Windows.Forms.PictureBox();
             this.pbLogout = new System.Windows.Forms.PictureBox();
-            this.lblAccount = new System.Windows.Forms.Label();
-            this.tbAccount = new System.Windows.Forms.TextBox();
-            this.lblCategory = new System.Windows.Forms.Label();
-            this.tbCategory = new System.Windows.Forms.TextBox();
+            this.dgvIncome = new System.Windows.Forms.DataGridView();
+            this.btnLoadIncome = new System.Windows.Forms.Button();
+            this.btnDeleteIncome = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbIncome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExpenses)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogout)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvIncome)).BeginInit();
             this.SuspendLayout();
             // 
             // pbHome
@@ -91,45 +91,45 @@ namespace CostTracker
             this.pbLogout.TabStop = false;
             this.pbLogout.Click += new System.EventHandler(this.pbLogout_Click);
             // 
-            // lblAccount
+            // dgvIncome
             // 
-            this.lblAccount.AutoSize = true;
-            this.lblAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.lblAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblAccount.ForeColor = System.Drawing.Color.White;
-            this.lblAccount.Location = new System.Drawing.Point(383, 209);
-            this.lblAccount.Name = "lblAccount";
-            this.lblAccount.Size = new System.Drawing.Size(119, 29);
-            this.lblAccount.TabIndex = 6;
-            this.lblAccount.Text = "Account :";
+            this.dgvIncome.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvIncome.Location = new System.Drawing.Point(371, 290);
+            this.dgvIncome.Name = "dgvIncome";
+            this.dgvIncome.RowHeadersWidth = 51;
+            this.dgvIncome.RowTemplate.Height = 24;
+            this.dgvIncome.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvIncome.Size = new System.Drawing.Size(844, 416);
+            this.dgvIncome.TabIndex = 10;
+            this.dgvIncome.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvIncome_CellContentClick);
             // 
-            // tbAccount
+            // btnLoadIncome
             // 
-            this.tbAccount.Font = new System.Drawing.Font("Microsoft PhagsPa", 15F);
-            this.tbAccount.Location = new System.Drawing.Point(504, 204);
-            this.tbAccount.Name = "tbAccount";
-            this.tbAccount.Size = new System.Drawing.Size(276, 39);
-            this.tbAccount.TabIndex = 7;
+            this.btnLoadIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(205)))), ((int)(((byte)(150)))));
+            this.btnLoadIncome.Font = new System.Drawing.Font("Microsoft PhagsPa", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoadIncome.ForeColor = System.Drawing.Color.White;
+            this.btnLoadIncome.Location = new System.Drawing.Point(820, 188);
+            this.btnLoadIncome.Margin = new System.Windows.Forms.Padding(1);
+            this.btnLoadIncome.Name = "btnLoadIncome";
+            this.btnLoadIncome.Size = new System.Drawing.Size(229, 53);
+            this.btnLoadIncome.TabIndex = 17;
+            this.btnLoadIncome.Text = "Load Income";
+            this.btnLoadIncome.UseVisualStyleBackColor = false;
+            this.btnLoadIncome.Click += new System.EventHandler(this.btnLoadIncome_Click);
             // 
-            // lblCategory
+            // btnDeleteIncome
             // 
-            this.lblCategory.AutoSize = true;
-            this.lblCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.lblCategory.Font = new System.Drawing.Font("Microsoft PhagsPa", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategory.ForeColor = System.Drawing.Color.White;
-            this.lblCategory.Location = new System.Drawing.Point(794, 207);
-            this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(127, 32);
-            this.lblCategory.TabIndex = 8;
-            this.lblCategory.Text = "Category :";
-            // 
-            // tbCategory
-            // 
-            this.tbCategory.Font = new System.Drawing.Font("Microsoft PhagsPa", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCategory.Location = new System.Drawing.Point(924, 204);
-            this.tbCategory.Name = "tbCategory";
-            this.tbCategory.Size = new System.Drawing.Size(276, 39);
-            this.tbCategory.TabIndex = 9;
+            this.btnDeleteIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(205)))), ((int)(((byte)(150)))));
+            this.btnDeleteIncome.Font = new System.Drawing.Font("Microsoft PhagsPa", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteIncome.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteIncome.Location = new System.Drawing.Point(550, 188);
+            this.btnDeleteIncome.Margin = new System.Windows.Forms.Padding(1);
+            this.btnDeleteIncome.Name = "btnDeleteIncome";
+            this.btnDeleteIncome.Size = new System.Drawing.Size(229, 53);
+            this.btnDeleteIncome.TabIndex = 18;
+            this.btnDeleteIncome.Text = "Delete Income";
+            this.btnDeleteIncome.UseVisualStyleBackColor = false;
+            this.btnDeleteIncome.Click += new System.EventHandler(this.btnDeleteIncome_Click);
             // 
             // ViewIncome
             // 
@@ -138,22 +138,23 @@ namespace CostTracker
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1262, 753);
-            this.Controls.Add(this.tbCategory);
-            this.Controls.Add(this.lblCategory);
-            this.Controls.Add(this.tbAccount);
-            this.Controls.Add(this.lblAccount);
+            this.Controls.Add(this.btnDeleteIncome);
+            this.Controls.Add(this.btnLoadIncome);
+            this.Controls.Add(this.dgvIncome);
             this.Controls.Add(this.pbLogout);
             this.Controls.Add(this.pbExpenses);
             this.Controls.Add(this.pbIncome);
             this.Controls.Add(this.pbHome);
             this.Name = "ViewIncome";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewIncome";
+            this.Load += new System.EventHandler(this.ViewIncome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbIncome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExpenses)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogout)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvIncome)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -163,9 +164,8 @@ namespace CostTracker
         private System.Windows.Forms.PictureBox pbIncome;
         private System.Windows.Forms.PictureBox pbExpenses;
         private System.Windows.Forms.PictureBox pbLogout;
-        private System.Windows.Forms.Label lblAccount;
-        private System.Windows.Forms.TextBox tbAccount;
-        private System.Windows.Forms.Label lblCategory;
-        private System.Windows.Forms.TextBox tbCategory;
+        private System.Windows.Forms.DataGridView dgvIncome;
+        private System.Windows.Forms.Button btnLoadIncome;
+        private System.Windows.Forms.Button btnDeleteIncome;
     }
 }

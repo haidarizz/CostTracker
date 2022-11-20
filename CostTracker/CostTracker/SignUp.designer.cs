@@ -56,6 +56,7 @@
             // 
             this.tbNama.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.tbNama.Font = new System.Drawing.Font("Microsoft PhagsPa", 25.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNama.ForeColor = System.Drawing.Color.White;
             this.tbNama.Location = new System.Drawing.Point(627, 112);
             this.tbNama.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbNama.Name = "tbNama";
@@ -66,6 +67,7 @@
             // 
             this.tbEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.tbEmail.Font = new System.Drawing.Font("Microsoft PhagsPa", 25.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEmail.ForeColor = System.Drawing.Color.White;
             this.tbEmail.Location = new System.Drawing.Point(627, 272);
             this.tbEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbEmail.Name = "tbEmail";
@@ -89,11 +91,13 @@
             // 
             this.tbPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.tbPassword.Font = new System.Drawing.Font("Microsoft PhagsPa", 25.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPassword.ForeColor = System.Drawing.Color.White;
             this.tbPassword.Location = new System.Drawing.Point(627, 432);
             this.tbPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(504, 61);
             this.tbPassword.TabIndex = 6;
+            this.tbPassword.UseSystemPasswordChar = true;
             // 
             // lblPassword
             // 
@@ -152,6 +156,7 @@
             this.Controls.Add(this.lblNama);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SignUp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SignUp";
             this.Load += new System.EventHandler(this.SignUp_Load);
             this.ResumeLayout(false);

@@ -33,36 +33,5 @@ namespace CostTracker
             Name = _name;
             Email = _email;
         }
-        /*public void signUp(string Name, string Email, string Password)
-        {
-            try
-            {
-                conn = new NpgsqlConnection(connstring);
-                conn.Open();
-                sql = @"select * from ct_insert_users(:_name,:_email,:_password)";
-
-                _name = Name;
-                _email = Email;
-                _password = Password;
-
-                cmd = new NpgsqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("_name", _name);
-                cmd.Parameters.AddWithValue("_email", _email);
-                cmd.Parameters.AddWithValue("_password", _password);
-                if ((int)cmd.ExecuteScalar() == 1)
-                {
-                    MessageBox.Show("Berhasil");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        public void login(string Email, string Password)
-        {
-           
-        }*/
     }
 }

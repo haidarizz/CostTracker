@@ -40,6 +40,13 @@ namespace CostTracker
             this.boxBalance = new System.Windows.Forms.PictureBox();
             this.btIncome = new System.Windows.Forms.PictureBox();
             this.btExpenses = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblIncome = new System.Windows.Forms.Label();
+            this.lblOutcome = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblBalance = new System.Windows.Forms.Label();
+            this.btnRefresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbIncome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExpenses)).BeginInit();
@@ -167,6 +174,91 @@ namespace CostTracker
             this.btExpenses.TabStop = false;
             this.btExpenses.Click += new System.EventHandler(this.btExpenses_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(205)))), ((int)(((byte)(150)))));
+            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(401, 301);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 26);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Total :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(99)))), ((int)(((byte)(87)))));
+            this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(835, 305);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 26);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Total :";
+            // 
+            // lblIncome
+            // 
+            this.lblIncome.AutoSize = true;
+            this.lblIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(205)))), ((int)(((byte)(150)))));
+            this.lblIncome.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIncome.ForeColor = System.Drawing.Color.White;
+            this.lblIncome.Location = new System.Drawing.Point(467, 301);
+            this.lblIncome.Name = "lblIncome";
+            this.lblIncome.Size = new System.Drawing.Size(70, 26);
+            this.lblIncome.TabIndex = 12;
+            this.lblIncome.Text = "label3";
+            // 
+            // lblOutcome
+            // 
+            this.lblOutcome.AutoSize = true;
+            this.lblOutcome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(99)))), ((int)(((byte)(87)))));
+            this.lblOutcome.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOutcome.ForeColor = System.Drawing.Color.White;
+            this.lblOutcome.Location = new System.Drawing.Point(901, 305);
+            this.lblOutcome.Name = "lblOutcome";
+            this.lblOutcome.Size = new System.Drawing.Size(70, 26);
+            this.lblOutcome.TabIndex = 13;
+            this.lblOutcome.Text = "label4";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft PhagsPa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(667, 581);
+            this.label5.Margin = new System.Windows.Forms.Padding(0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(47, 33);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Rp";
+            // 
+            // lblBalance
+            // 
+            this.lblBalance.AutoSize = true;
+            this.lblBalance.Font = new System.Drawing.Font("Microsoft PhagsPa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBalance.ForeColor = System.Drawing.Color.White;
+            this.lblBalance.Location = new System.Drawing.Point(706, 581);
+            this.lblBalance.Name = "lblBalance";
+            this.lblBalance.Size = new System.Drawing.Size(135, 33);
+            this.lblBalance.TabIndex = 15;
+            this.lblBalance.Text = "lblBalance";
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+            this.btnRefresh.Font = new System.Drawing.Font("Microsoft PhagsPa", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(673, 669);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(1);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(229, 53);
+            this.btnRefresh.TabIndex = 17;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -175,9 +267,14 @@ namespace CostTracker
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1262, 753);
+            this.Controls.Add(this.btnRefresh);
+            this.Controls.Add(this.lblBalance);
+            this.Controls.Add(this.lblOutcome);
+            this.Controls.Add(this.lblIncome);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btExpenses);
             this.Controls.Add(this.btIncome);
-            this.Controls.Add(this.boxBalance);
             this.Controls.Add(this.boxExpenses);
             this.Controls.Add(this.boxIncome);
             this.Controls.Add(this.lblUser);
@@ -185,8 +282,12 @@ namespace CostTracker
             this.Controls.Add(this.pbExpenses);
             this.Controls.Add(this.pbIncome);
             this.Controls.Add(this.pbHome);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.boxBalance);
             this.Name = "Dashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbIncome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExpenses)).EndInit();
@@ -213,5 +314,12 @@ namespace CostTracker
         private System.Windows.Forms.PictureBox boxBalance;
         private System.Windows.Forms.PictureBox btIncome;
         private System.Windows.Forms.PictureBox btExpenses;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblIncome;
+        private System.Windows.Forms.Label lblOutcome;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblBalance;
+        private System.Windows.Forms.Button btnRefresh;
     }
 }

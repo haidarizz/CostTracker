@@ -47,16 +47,12 @@ namespace CostTracker
                 cmd.Parameters.AddWithValue("_in_amount", Convert.ToInt32(tbAmount.Text));
                 cmd.Parameters.AddWithValue("_in_account", lbAccount.Text);
                 cmd.Parameters.AddWithValue("_in_category", lbCategory.Text);
-                //dtpDate.Format = DateTimePickerFormat.Custom;
-                //dtpDate.CustomFormat = "yyyy-MM-dd";
                 cmd.Parameters.AddWithValue("_in_date", dtpDate.Value);
                 cmd.Parameters.AddWithValue("_in_note", tbNote.Text);
                 if ((int)cmd.ExecuteScalar() == 1)
                 {
                     MessageBox.Show("Add Income Berhasil!", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     conn.Close();
-                    //btnLoaddata.PerformClick();
-                    //tbName.Text = tbEmail.Text = tbPassword.Text = null;
                     Dashboard dashboard = new Dashboard(Pengguna);
                     dashboard.Show();
                     this.Hide();

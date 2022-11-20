@@ -40,9 +40,10 @@
             this.lblLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.lblLogout.Font = new System.Drawing.Font("Microsoft PhagsPa", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogout.ForeColor = System.Drawing.Color.Black;
-            this.lblLogout.Location = new System.Drawing.Point(346, 237);
+            this.lblLogout.Location = new System.Drawing.Point(461, 292);
+            this.lblLogout.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLogout.Name = "lblLogout";
-            this.lblLogout.Size = new System.Drawing.Size(262, 62);
+            this.lblLogout.Size = new System.Drawing.Size(325, 76);
             this.lblLogout.TabIndex = 0;
             this.lblLogout.Text = "Oh no! You’re leaving...\nAre you sure?";
             this.lblLogout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -52,9 +53,10 @@
             this.btnLogoutNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.btnLogoutNo.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogoutNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.btnLogoutNo.Location = new System.Drawing.Point(314, 322);
+            this.btnLogoutNo.Location = new System.Drawing.Point(419, 396);
+            this.btnLogoutNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogoutNo.Name = "btnLogoutNo";
-            this.btnLogoutNo.Size = new System.Drawing.Size(320, 60);
+            this.btnLogoutNo.Size = new System.Drawing.Size(427, 74);
             this.btnLogoutNo.TabIndex = 1;
             this.btnLogoutNo.Text = "Naah, Just Kidding";
             this.btnLogoutNo.UseVisualStyleBackColor = false;
@@ -65,9 +67,10 @@
             this.btnLogoutYes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.btnLogoutYes.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnLogoutYes.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogoutYes.Location = new System.Drawing.Point(314, 406);
+            this.btnLogoutYes.Location = new System.Drawing.Point(419, 500);
+            this.btnLogoutYes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogoutYes.Name = "btnLogoutYes";
-            this.btnLogoutYes.Size = new System.Drawing.Size(320, 60);
+            this.btnLogoutYes.Size = new System.Drawing.Size(427, 74);
             this.btnLogoutYes.TabIndex = 2;
             this.btnLogoutYes.Text = "Yes, Log Me Out";
             this.btnLogoutYes.UseVisualStyleBackColor = false;
@@ -75,16 +78,17 @@
             // 
             // Logout
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(946, 570);
+            this.ClientSize = new System.Drawing.Size(1261, 702);
             this.Controls.Add(this.btnLogoutYes);
             this.Controls.Add(this.btnLogoutNo);
             this.Controls.Add(this.lblLogout);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Logout";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Logout";
             this.ResumeLayout(false);
             this.PerformLayout();

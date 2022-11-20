@@ -203,15 +203,15 @@
             this.lbCategory.IntegralHeight = false;
             this.lbCategory.ItemHeight = 42;
             this.lbCategory.Items.AddRange(new object[] {
-            "Transportation",
-            "Food and Beverage",
             "Beauty",
-            "Household",
-            "Hobbies and Entertainment",
-            "Loans",
             "Bills",
+            "Education",
+            "Food and Beverage",
             "Gift",
-            "Education"});
+            "Hobbies and Entertainment",
+            "Household",
+            "Loans",
+            "Transportation"});
             this.lbCategory.Location = new System.Drawing.Point(846, 324);
             this.lbCategory.Name = "lbCategory";
             this.lbCategory.ScrollAlwaysVisible = true;
@@ -265,6 +265,7 @@
             this.Controls.Add(this.pbIncome);
             this.Controls.Add(this.pbHome);
             this.Name = "AddExpenses";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddExpenses";
             this.Load += new System.EventHandler(this.AddExpenses_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).EndInit();

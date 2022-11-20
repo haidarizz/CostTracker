@@ -46,8 +46,6 @@ namespace CostTracker
                 {
                     MessageBox.Show("Add Expense Berhasil!", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     conn.Close();
-                    //btnLoaddata.PerformClick();
-                    //tbName.Text = tbEmail.Text = tbPassword.Text = null;
                     Dashboard dashboard = new Dashboard(Pengguna);
                     dashboard.Show();
                     this.Hide();

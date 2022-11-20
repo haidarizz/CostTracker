@@ -34,7 +34,6 @@ namespace CostTracker
                 string id_user = "CTDEFAULT";
                 NpgsqlCommand cmd_id = new NpgsqlCommand("Select id_user from tb_users where email = '" + tbEmail.Text + "' and password = '" + tbPassword.Text + "'", conn);
                 NpgsqlDataReader id_reader = cmd_id.ExecuteReader();
-                //string id_user = id_reader.GetString(0);
                 while(id_reader.Read())
                 {
                     id_user = id_reader.GetString(0);
@@ -44,7 +43,6 @@ namespace CostTracker
                 string name = "NMDEFAULT";
                 NpgsqlCommand cmd_name = new NpgsqlCommand("Select name from tb_users where email = '" + tbEmail.Text + "' and password = '" + tbPassword.Text + "'", conn);
                 NpgsqlDataReader name_reader = cmd_name.ExecuteReader();
-                //string id_user = id_reader.GetString(0);
                 while (name_reader.Read())
                 {
                     name = name_reader.GetString(0);

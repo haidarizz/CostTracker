@@ -46,7 +46,7 @@ namespace CostTracker
             this.lblEmail.ForeColor = System.Drawing.Color.White;
             this.lblEmail.Location = new System.Drawing.Point(617, 164);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(134, 57);
+            this.lblEmail.Size = new System.Drawing.Size(131, 55);
             this.lblEmail.TabIndex = 0;
             this.lblEmail.Text = "Email";
             // 
@@ -54,6 +54,7 @@ namespace CostTracker
             // 
             this.tbEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.tbEmail.Font = new System.Drawing.Font("Microsoft PhagsPa", 25.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEmail.ForeColor = System.Drawing.Color.White;
             this.tbEmail.Location = new System.Drawing.Point(627, 235);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(504, 61);
@@ -66,7 +67,7 @@ namespace CostTracker
             this.lblPassword.ForeColor = System.Drawing.Color.White;
             this.lblPassword.Location = new System.Drawing.Point(617, 325);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(216, 57);
+            this.lblPassword.Size = new System.Drawing.Size(211, 55);
             this.lblPassword.TabIndex = 2;
             this.lblPassword.Text = "Password";
             // 
@@ -74,11 +75,12 @@ namespace CostTracker
             // 
             this.tbPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.tbPassword.Font = new System.Drawing.Font("Microsoft PhagsPa", 25.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPassword.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.tbPassword.ForeColor = System.Drawing.Color.White;
             this.tbPassword.Location = new System.Drawing.Point(627, 397);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(504, 61);
             this.tbPassword.TabIndex = 3;
+            this.tbPassword.UseSystemPasswordChar = true;
             // 
             // btLogin
             // 
@@ -133,6 +135,7 @@ namespace CostTracker
             this.Controls.Add(this.tbEmail);
             this.Controls.Add(this.lblEmail);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();

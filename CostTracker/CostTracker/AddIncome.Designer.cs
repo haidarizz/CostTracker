@@ -262,6 +262,7 @@
             this.Controls.Add(this.pbIncome);
             this.Controls.Add(this.pbHome);
             this.Name = "AddIncome";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddIncome";
             this.Load += new System.EventHandler(this.AddIncome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).EndInit();
