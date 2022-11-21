@@ -91,3 +91,7 @@ C:\Users\LENOVO\Documents\GitHub\CostTracker\CostTracker\CostTracker\bin\Debug\S
 C:\Users\LENOVO\Documents\GitHub\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.Logout.resources
 C:\Users\LENOVO\Documents\GitHub\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.SignUp.resources
 C:\Users\LENOVO\Documents\GitHub\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.csproj.CopyComplete
+C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\bin\Debug\CostTracker.exe.manifest
+C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\bin\Debug\CostTracker.application
+C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.exe.manifest
+C:\Users\elnat\source\repos\CostTracker\CostTracker\CostTracker\obj\Debug\CostTracker.application
