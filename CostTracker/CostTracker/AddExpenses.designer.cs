@@ -75,9 +75,9 @@
             // pbExpenses
             // 
             this.pbExpenses.Image = ((System.Drawing.Image)(resources.GetObject("pbExpenses.Image")));
-            this.pbExpenses.Location = new System.Drawing.Point(72, 483);
+            this.pbExpenses.Location = new System.Drawing.Point(84, 495);
             this.pbExpenses.Name = "pbExpenses";
-            this.pbExpenses.Size = new System.Drawing.Size(170, 150);
+            this.pbExpenses.Size = new System.Drawing.Size(144, 132);
             this.pbExpenses.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbExpenses.TabIndex = 2;
             this.pbExpenses.TabStop = false;
@@ -237,7 +237,7 @@
             this.btnSaveExpenses.Name = "btnSaveExpenses";
             this.btnSaveExpenses.Size = new System.Drawing.Size(313, 67);
             this.btnSaveExpenses.TabIndex = 15;
-            this.btnSaveExpenses.Text = "Save Expense";
+            this.btnSaveExpenses.Text = "Add Expense";
             this.btnSaveExpenses.UseVisualStyleBackColor = false;
             this.btnSaveExpenses.Click += new System.EventHandler(this.btnSaveExpenses_Click);
             // 

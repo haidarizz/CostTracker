@@ -64,7 +64,7 @@
             // pbIncome
             // 
             this.pbIncome.Image = ((System.Drawing.Image)(resources.GetObject("pbIncome.Image")));
-            this.pbIncome.Location = new System.Drawing.Point(72, 334);
+            this.pbIncome.Location = new System.Drawing.Point(72, 339);
             this.pbIncome.Name = "pbIncome";
             this.pbIncome.Size = new System.Drawing.Size(170, 120);
             this.pbIncome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -75,9 +75,9 @@
             // pbExpenses
             // 
             this.pbExpenses.Image = ((System.Drawing.Image)(resources.GetObject("pbExpenses.Image")));
-            this.pbExpenses.Location = new System.Drawing.Point(72, 483);
+            this.pbExpenses.Location = new System.Drawing.Point(84, 495);
             this.pbExpenses.Name = "pbExpenses";
-            this.pbExpenses.Size = new System.Drawing.Size(170, 150);
+            this.pbExpenses.Size = new System.Drawing.Size(144, 132);
             this.pbExpenses.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbExpenses.TabIndex = 2;
             this.pbExpenses.TabStop = false;
@@ -191,7 +191,7 @@
             this.btnSaveIncome.Name = "btnSaveIncome";
             this.btnSaveIncome.Size = new System.Drawing.Size(313, 67);
             this.btnSaveIncome.TabIndex = 14;
-            this.btnSaveIncome.Text = "Save Income";
+            this.btnSaveIncome.Text = "Add Income";
             this.btnSaveIncome.UseVisualStyleBackColor = false;
             this.btnSaveIncome.Click += new System.EventHandler(this.btnSaveIncome_Click);
             // 

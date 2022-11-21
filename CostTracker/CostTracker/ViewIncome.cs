@@ -22,7 +22,7 @@ namespace CostTracker
             string name = Pengguna.Name;
         }
         private NpgsqlConnection conn;
-        string connstring = "Host=Localhost;Port=5432;Username=postgres;Password=junpro7;Database=CostTracker";
+        string connstring = "Host=database-1.c3sblevz37wv.ap-northeast-1.rds.amazonaws.com;Port=5432;Username=postgres;Password=collegebicycle;Database=CostTracker";
         public DataTable dt;
         public static NpgsqlCommand cmd;
         private string sql = null;
@@ -58,15 +58,42 @@ namespace CostTracker
         {
             try
             {
-                conn.Open();
-                dgvIncome.DataSource = null;
-                sql = "select * from tb_income where id_user = '" + Pengguna.ID_user + "'";
-                cmd = new NpgsqlCommand(sql, conn);
-                dt = new DataTable();
-                NpgsqlDataReader rd = cmd.ExecuteReader();
-                dt.Load(rd);
-                dgvIncome.DataSource = dt;
-                conn.Close();
+                if (rbThisMonth.Checked)
+                {
+                    conn.Open();
+                    dgvIncome.DataSource = null;
+                    sql = "select * from tb_income where id_user = '" + Pengguna.ID_user + "' and EXTRACT(MONTH FROM out_date) = EXTRACT(MONTH FROM CURRENT_TIMESTAMP)";
+                    cmd = new NpgsqlCommand(sql, conn);
+                    dt = new DataTable();
+                    NpgsqlDataReader rd = cmd.ExecuteReader();
+                    dt.Load(rd);
+                    dgvIncome.DataSource = dt;
+                    conn.Close();
+                }
+                else if (rbAll.Checked)
+                {
+                    conn.Open();
+                    dgvIncome.DataSource = null;
+                    sql = "select * from tb_income where id_user = '" + Pengguna.ID_user + "'";
+                    cmd = new NpgsqlCommand(sql, conn);
+                    dt = new DataTable();
+                    NpgsqlDataReader rd = cmd.ExecuteReader();
+                    dt.Load(rd);
+                    dgvIncome.DataSource = dt;
+                    conn.Close();
+                }
+                else
+                {
+                    conn.Open();
+                    dgvIncome.DataSource = null;
+                    sql = "select * from tb_income where id_user = '" + Pengguna.ID_user + "'";
+                    cmd = new NpgsqlCommand(sql, conn);
+                    dt = new DataTable();
+                    NpgsqlDataReader rd = cmd.ExecuteReader();
+                    dt.Load(rd);
+                    dgvIncome.DataSource = dt;
+                    conn.Close();
+                }
             }
             catch (Exception ex)
             {
@@ -103,6 +130,13 @@ namespace CostTracker
                     r = null;
                 }
             }
+        }
+
+        private void btnAddIncome_Click(object sender, EventArgs e)
+        {
+            AddIncome addincome = new AddIncome(Pengguna);
+            addincome.Show();
+            this.Hide();
         }
     }
 }

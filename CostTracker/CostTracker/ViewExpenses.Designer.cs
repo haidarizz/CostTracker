@@ -37,6 +37,9 @@ namespace CostTracker
             this.dgvExpense = new System.Windows.Forms.DataGridView();
             this.btnLoadExpense = new System.Windows.Forms.Button();
             this.btnDeleteExpense = new System.Windows.Forms.Button();
+            this.btnAddExpense = new System.Windows.Forms.Button();
+            this.rbThisMonth = new System.Windows.Forms.RadioButton();
+            this.rbAll = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbIncome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExpenses)).BeginInit();
@@ -60,7 +63,7 @@ namespace CostTracker
             // 
             this.pbIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
             this.pbIncome.Image = ((System.Drawing.Image)(resources.GetObject("pbIncome.Image")));
-            this.pbIncome.Location = new System.Drawing.Point(72, 334);
+            this.pbIncome.Location = new System.Drawing.Point(72, 339);
             this.pbIncome.Name = "pbIncome";
             this.pbIncome.Size = new System.Drawing.Size(170, 120);
             this.pbIncome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -72,9 +75,9 @@ namespace CostTracker
             // 
             this.pbExpenses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
             this.pbExpenses.Image = ((System.Drawing.Image)(resources.GetObject("pbExpenses.Image")));
-            this.pbExpenses.Location = new System.Drawing.Point(72, 483);
+            this.pbExpenses.Location = new System.Drawing.Point(84, 495);
             this.pbExpenses.Name = "pbExpenses";
-            this.pbExpenses.Size = new System.Drawing.Size(170, 150);
+            this.pbExpenses.Size = new System.Drawing.Size(144, 132);
             this.pbExpenses.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbExpenses.TabIndex = 3;
             this.pbExpenses.TabStop = false;
@@ -108,12 +111,12 @@ namespace CostTracker
             this.btnLoadExpense.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(99)))), ((int)(((byte)(87)))));
             this.btnLoadExpense.Font = new System.Drawing.Font("Microsoft PhagsPa", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoadExpense.ForeColor = System.Drawing.Color.White;
-            this.btnLoadExpense.Location = new System.Drawing.Point(820, 188);
+            this.btnLoadExpense.Location = new System.Drawing.Point(1095, 182);
             this.btnLoadExpense.Margin = new System.Windows.Forms.Padding(1);
             this.btnLoadExpense.Name = "btnLoadExpense";
-            this.btnLoadExpense.Size = new System.Drawing.Size(229, 53);
+            this.btnLoadExpense.Size = new System.Drawing.Size(120, 55);
             this.btnLoadExpense.TabIndex = 16;
-            this.btnLoadExpense.Text = "Load Expense";
+            this.btnLoadExpense.Text = "Load";
             this.btnLoadExpense.UseVisualStyleBackColor = false;
             this.btnLoadExpense.Click += new System.EventHandler(this.btnLoadExpense_Click);
             // 
@@ -122,14 +125,54 @@ namespace CostTracker
             this.btnDeleteExpense.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(99)))), ((int)(((byte)(87)))));
             this.btnDeleteExpense.Font = new System.Drawing.Font("Microsoft PhagsPa", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteExpense.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteExpense.Location = new System.Drawing.Point(550, 188);
+            this.btnDeleteExpense.Location = new System.Drawing.Point(925, 182);
             this.btnDeleteExpense.Margin = new System.Windows.Forms.Padding(1);
             this.btnDeleteExpense.Name = "btnDeleteExpense";
-            this.btnDeleteExpense.Size = new System.Drawing.Size(229, 53);
+            this.btnDeleteExpense.Size = new System.Drawing.Size(120, 55);
             this.btnDeleteExpense.TabIndex = 17;
-            this.btnDeleteExpense.Text = "Delete Expense";
+            this.btnDeleteExpense.Text = "Delete";
             this.btnDeleteExpense.UseVisualStyleBackColor = false;
             this.btnDeleteExpense.Click += new System.EventHandler(this.btnDeleteExpense_Click);
+            // 
+            // btnAddExpense
+            // 
+            this.btnAddExpense.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(99)))), ((int)(((byte)(87)))));
+            this.btnAddExpense.Font = new System.Drawing.Font("Microsoft PhagsPa", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddExpense.ForeColor = System.Drawing.Color.White;
+            this.btnAddExpense.Location = new System.Drawing.Point(755, 182);
+            this.btnAddExpense.Margin = new System.Windows.Forms.Padding(1);
+            this.btnAddExpense.Name = "btnAddExpense";
+            this.btnAddExpense.Size = new System.Drawing.Size(120, 55);
+            this.btnAddExpense.TabIndex = 18;
+            this.btnAddExpense.Text = "Add";
+            this.btnAddExpense.UseVisualStyleBackColor = false;
+            this.btnAddExpense.Click += new System.EventHandler(this.btnAddExpense_Click);
+            // 
+            // rbThisMonth
+            // 
+            this.rbThisMonth.AutoSize = true;
+            this.rbThisMonth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.rbThisMonth.Font = new System.Drawing.Font("Microsoft PhagsPa", 16.2F);
+            this.rbThisMonth.ForeColor = System.Drawing.Color.White;
+            this.rbThisMonth.Location = new System.Drawing.Point(477, 189);
+            this.rbThisMonth.Name = "rbThisMonth";
+            this.rbThisMonth.Size = new System.Drawing.Size(236, 40);
+            this.rbThisMonth.TabIndex = 19;
+            this.rbThisMonth.Text = "This month only";
+            this.rbThisMonth.UseVisualStyleBackColor = false;
+            // 
+            // rbAll
+            // 
+            this.rbAll.AutoSize = true;
+            this.rbAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.rbAll.Font = new System.Drawing.Font("Microsoft PhagsPa", 16.2F);
+            this.rbAll.ForeColor = System.Drawing.Color.White;
+            this.rbAll.Location = new System.Drawing.Point(371, 189);
+            this.rbAll.Name = "rbAll";
+            this.rbAll.Size = new System.Drawing.Size(68, 40);
+            this.rbAll.TabIndex = 20;
+            this.rbAll.Text = "All";
+            this.rbAll.UseVisualStyleBackColor = false;
             // 
             // ViewExpenses
             // 
@@ -138,6 +181,9 @@ namespace CostTracker
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1262, 753);
+            this.Controls.Add(this.rbAll);
+            this.Controls.Add(this.rbThisMonth);
+            this.Controls.Add(this.btnAddExpense);
             this.Controls.Add(this.btnDeleteExpense);
             this.Controls.Add(this.btnLoadExpense);
             this.Controls.Add(this.dgvExpense);
@@ -156,6 +202,7 @@ namespace CostTracker
             ((System.ComponentModel.ISupportInitialize)(this.pbLogout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExpense)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -168,5 +215,8 @@ namespace CostTracker
         private System.Windows.Forms.DataGridView dgvExpense;
         private System.Windows.Forms.Button btnLoadExpense;
         private System.Windows.Forms.Button btnDeleteExpense;
+        private System.Windows.Forms.Button btnAddExpense;
+        private System.Windows.Forms.RadioButton rbThisMonth;
+        private System.Windows.Forms.RadioButton rbAll;
     }
 }

@@ -46,7 +46,6 @@ namespace CostTracker
             this.lblOutcome = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblBalance = new System.Windows.Forms.Label();
-            this.btnRefresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbIncome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExpenses)).BeginInit();
@@ -74,7 +73,7 @@ namespace CostTracker
             // 
             this.pbIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
             this.pbIncome.Image = ((System.Drawing.Image)(resources.GetObject("pbIncome.Image")));
-            this.pbIncome.Location = new System.Drawing.Point(72, 334);
+            this.pbIncome.Location = new System.Drawing.Point(72, 339);
             this.pbIncome.Name = "pbIncome";
             this.pbIncome.Size = new System.Drawing.Size(170, 120);
             this.pbIncome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -85,9 +84,9 @@ namespace CostTracker
             // pbExpenses
             // 
             this.pbExpenses.Image = ((System.Drawing.Image)(resources.GetObject("pbExpenses.Image")));
-            this.pbExpenses.Location = new System.Drawing.Point(72, 483);
+            this.pbExpenses.Location = new System.Drawing.Point(84, 495);
             this.pbExpenses.Name = "pbExpenses";
-            this.pbExpenses.Size = new System.Drawing.Size(170, 150);
+            this.pbExpenses.Size = new System.Drawing.Size(144, 132);
             this.pbExpenses.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbExpenses.TabIndex = 2;
             this.pbExpenses.TabStop = false;
@@ -245,20 +244,6 @@ namespace CostTracker
             this.lblBalance.TabIndex = 15;
             this.lblBalance.Text = "lblBalance";
             // 
-            // btnRefresh
-            // 
-            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.btnRefresh.Font = new System.Drawing.Font("Microsoft PhagsPa", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.ForeColor = System.Drawing.Color.White;
-            this.btnRefresh.Location = new System.Drawing.Point(673, 669);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(1);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(229, 53);
-            this.btnRefresh.TabIndex = 17;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = false;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -267,7 +252,6 @@ namespace CostTracker
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1262, 753);
-            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.lblBalance);
             this.Controls.Add(this.lblOutcome);
             this.Controls.Add(this.lblIncome);
@@ -320,6 +304,5 @@ namespace CostTracker
         private System.Windows.Forms.Label lblOutcome;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblBalance;
-        private System.Windows.Forms.Button btnRefresh;
     }
 }

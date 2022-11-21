@@ -23,11 +23,7 @@ namespace CostTracker
             lblUser.Text = "Hi, " + name + "!";
         }
         private NpgsqlConnection conn;
-        string connstring = "Host=Localhost;Port=5432;Username=postgres;Password=junpro7;Database=CostTracker";
-        public DataTable dt;
-        public static NpgsqlCommand cmd;
-        private string sql = null;
-        private DataGridViewRow r;
+        string connstring = "Host=database-1.c3sblevz37wv.ap-northeast-1.rds.amazonaws.com;Port=5432;Username=postgres;Password=collegebicycle;Database=CostTracker";
 
         private void pbHome_Click(object sender, EventArgs e)
         {
@@ -77,10 +73,6 @@ namespace CostTracker
         private void Dashboard_Load(object sender, EventArgs e)
         {
             conn = new NpgsqlConnection(connstring);
-        }
-
-        private void btnRefresh_Click(object sender, EventArgs e)
-        {
             conn.Open();
             int income = 0;
             NpgsqlCommand cmd_income = new NpgsqlCommand("Select sum (in_amount) as total from tb_income where id_user = '" + Pengguna.ID_user + "'", conn);

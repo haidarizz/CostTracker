@@ -12,11 +12,6 @@ namespace CostTracker
 {
     class User
     {
-        //public NpgsqlConnection conn;
-        //string connstring = "Host=Localhost;Port=5432;Username=postgres;Password=junpro7;Database=CostTracker";
-        //public static NpgsqlCommand cmd;
-        //private string sql = null;
-
         private string _id_user;
         private string _name;
         private string _email;

@@ -23,11 +23,9 @@ namespace CostTracker
             string name = Pengguna.Name;
         }
         private NpgsqlConnection conn;
-        string connstring = "Host=Localhost;Port=5432;Username=postgres;Password=junpro7;Database=CostTracker";
-        public DataTable dt;
+        string connstring = "Host=database-1.c3sblevz37wv.ap-northeast-1.rds.amazonaws.com;Port=5432;Username=postgres;Password=collegebicycle;Database=CostTracker";
         public static NpgsqlCommand cmd;
         private string sql = null;
-        private DataGridViewRow r;
 
         private void pbHome_Click(object sender, EventArgs e)
         {
@@ -51,7 +49,7 @@ namespace CostTracker
                 cmd.Parameters.AddWithValue("_in_note", tbNote.Text);
                 if ((int)cmd.ExecuteScalar() == 1)
                 {
-                    MessageBox.Show("Add Income Berhasil!", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Succesfully added", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     conn.Close();
                     Dashboard dashboard = new Dashboard(Pengguna);
                     dashboard.Show();
@@ -60,7 +58,7 @@ namespace CostTracker
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error:" + ex.Message, "Add Income FAIL!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error:" + ex.Message, "Failed to add income", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

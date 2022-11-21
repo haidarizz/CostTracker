@@ -20,43 +20,51 @@ namespace CostTracker
 
         private void btLogin_Click(object sender, EventArgs e)
         {
-            bool blnfound = false;
-            NpgsqlConnection conn = new NpgsqlConnection("Host=Localhost;Port=5432;Username=postgres;Password=junpro7;Database=CostTracker");
-            conn.Open();
-            NpgsqlCommand cmd = new NpgsqlCommand("Select * from tb_users where email = '" + tbEmail.Text + "' and password = '" + tbPassword.Text + "'", conn);
-            NpgsqlDataReader dr = cmd.ExecuteReader();
-            if (dr.Read())
+            if (tbEmail.Text != string.Empty && tbPassword.Text != string.Empty)
             {
-                blnfound = true;
-                MessageBox.Show("Login Berhasil !!");
-                conn.Close();
+                bool blnfound = false;
+                NpgsqlConnection conn = new NpgsqlConnection("Host=database-1.c3sblevz37wv.ap-northeast-1.rds.amazonaws.com;Port=5432;Username=postgres;Password=collegebicycle;Database=CostTracker");
                 conn.Open();
-                string id_user = "CTDEFAULT";
-                NpgsqlCommand cmd_id = new NpgsqlCommand("Select id_user from tb_users where email = '" + tbEmail.Text + "' and password = '" + tbPassword.Text + "'", conn);
-                NpgsqlDataReader id_reader = cmd_id.ExecuteReader();
-                while(id_reader.Read())
+                NpgsqlCommand cmd = new NpgsqlCommand("Select * from tb_users where email = '" + tbEmail.Text + "' and password = '" + tbPassword.Text + "'", conn);
+                NpgsqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read())
                 {
-                    id_user = id_reader.GetString(0);
+                    blnfound = true;
+                    MessageBox.Show("Successfully logged in");
+                    conn.Close();
+                    conn.Open();
+                    string id_user = "CTDEFAULT";
+                    NpgsqlCommand cmd_id = new NpgsqlCommand("Select id_user from tb_users where email = '" + tbEmail.Text + "' and password = '" + tbPassword.Text + "'", conn);
+                    NpgsqlDataReader id_reader = cmd_id.ExecuteReader();
+                    while (id_reader.Read())
+                    {
+                        id_user = id_reader.GetString(0);
+                    }
+                    conn.Close();
+                    conn.Open();
+                    string name = "NMDEFAULT";
+                    NpgsqlCommand cmd_name = new NpgsqlCommand("Select name from tb_users where email = '" + tbEmail.Text + "' and password = '" + tbPassword.Text + "'", conn);
+                    NpgsqlDataReader name_reader = cmd_name.ExecuteReader();
+                    while (name_reader.Read())
+                    {
+                        name = name_reader.GetString(0);
+                    }
+                    conn.Close();
+                    User pengguna = new User(id_user, name, tbEmail.Text);
+                    Dashboard dashboard = new Dashboard(pengguna);
+                    dashboard.Show();
+                    this.Hide();
                 }
-                conn.Close();
-                conn.Open();
-                string name = "NMDEFAULT";
-                NpgsqlCommand cmd_name = new NpgsqlCommand("Select name from tb_users where email = '" + tbEmail.Text + "' and password = '" + tbPassword.Text + "'", conn);
-                NpgsqlDataReader name_reader = cmd_name.ExecuteReader();
-                while (name_reader.Read())
+                else
                 {
-                    name = name_reader.GetString(0);
+                    MessageBox.Show("Login failed");
                 }
-                conn.Close();
-                User pengguna = new User(id_user, name, tbEmail.Text);
-                Dashboard dashboard = new Dashboard(pengguna);
-                dashboard.Show();
-                this.Hide();
             }
             else
             {
-                MessageBox.Show("Login Gagal !!");
+                MessageBox.Show("Please fill the blank");
             }
+            
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

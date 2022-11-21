@@ -100,7 +100,7 @@ namespace CostTracker
             this.lblAccount.AutoSize = true;
             this.lblAccount.Font = new System.Drawing.Font("Microsoft PhagsPa", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAccount.ForeColor = System.Drawing.Color.White;
-            this.lblAccount.Location = new System.Drawing.Point(676, 584);
+            this.lblAccount.Location = new System.Drawing.Point(694, 584);
             this.lblAccount.Name = "lblAccount";
             this.lblAccount.Size = new System.Drawing.Size(254, 29);
             this.lblAccount.TabIndex = 5;
@@ -111,7 +111,7 @@ namespace CostTracker
             this.linklblSignUp.AutoSize = true;
             this.linklblSignUp.Font = new System.Drawing.Font("Microsoft PhagsPa", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linklblSignUp.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(205)))), ((int)(((byte)(150)))));
-            this.linklblSignUp.Location = new System.Drawing.Point(942, 584);
+            this.linklblSignUp.Location = new System.Drawing.Point(968, 584);
             this.linklblSignUp.Name = "linklblSignUp";
             this.linklblSignUp.Size = new System.Drawing.Size(88, 28);
             this.linklblSignUp.TabIndex = 6;

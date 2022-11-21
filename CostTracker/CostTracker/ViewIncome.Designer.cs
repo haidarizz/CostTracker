@@ -37,6 +37,9 @@ namespace CostTracker
             this.dgvIncome = new System.Windows.Forms.DataGridView();
             this.btnLoadIncome = new System.Windows.Forms.Button();
             this.btnDeleteIncome = new System.Windows.Forms.Button();
+            this.btnAddIncome = new System.Windows.Forms.Button();
+            this.rbAll = new System.Windows.Forms.RadioButton();
+            this.rbThisMonth = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbIncome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExpenses)).BeginInit();
@@ -60,7 +63,7 @@ namespace CostTracker
             // 
             this.pbIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
             this.pbIncome.Image = ((System.Drawing.Image)(resources.GetObject("pbIncome.Image")));
-            this.pbIncome.Location = new System.Drawing.Point(72, 334);
+            this.pbIncome.Location = new System.Drawing.Point(72, 339);
             this.pbIncome.Name = "pbIncome";
             this.pbIncome.Size = new System.Drawing.Size(170, 120);
             this.pbIncome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -71,9 +74,9 @@ namespace CostTracker
             // 
             this.pbExpenses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
             this.pbExpenses.Image = ((System.Drawing.Image)(resources.GetObject("pbExpenses.Image")));
-            this.pbExpenses.Location = new System.Drawing.Point(72, 483);
+            this.pbExpenses.Location = new System.Drawing.Point(84, 495);
             this.pbExpenses.Name = "pbExpenses";
-            this.pbExpenses.Size = new System.Drawing.Size(170, 150);
+            this.pbExpenses.Size = new System.Drawing.Size(144, 132);
             this.pbExpenses.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbExpenses.TabIndex = 4;
             this.pbExpenses.TabStop = false;
@@ -108,12 +111,12 @@ namespace CostTracker
             this.btnLoadIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(205)))), ((int)(((byte)(150)))));
             this.btnLoadIncome.Font = new System.Drawing.Font("Microsoft PhagsPa", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoadIncome.ForeColor = System.Drawing.Color.White;
-            this.btnLoadIncome.Location = new System.Drawing.Point(820, 188);
+            this.btnLoadIncome.Location = new System.Drawing.Point(1095, 182);
             this.btnLoadIncome.Margin = new System.Windows.Forms.Padding(1);
             this.btnLoadIncome.Name = "btnLoadIncome";
-            this.btnLoadIncome.Size = new System.Drawing.Size(229, 53);
+            this.btnLoadIncome.Size = new System.Drawing.Size(120, 55);
             this.btnLoadIncome.TabIndex = 17;
-            this.btnLoadIncome.Text = "Load Income";
+            this.btnLoadIncome.Text = "Load";
             this.btnLoadIncome.UseVisualStyleBackColor = false;
             this.btnLoadIncome.Click += new System.EventHandler(this.btnLoadIncome_Click);
             // 
@@ -122,14 +125,54 @@ namespace CostTracker
             this.btnDeleteIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(205)))), ((int)(((byte)(150)))));
             this.btnDeleteIncome.Font = new System.Drawing.Font("Microsoft PhagsPa", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteIncome.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteIncome.Location = new System.Drawing.Point(550, 188);
+            this.btnDeleteIncome.Location = new System.Drawing.Point(925, 182);
             this.btnDeleteIncome.Margin = new System.Windows.Forms.Padding(1);
             this.btnDeleteIncome.Name = "btnDeleteIncome";
-            this.btnDeleteIncome.Size = new System.Drawing.Size(229, 53);
+            this.btnDeleteIncome.Size = new System.Drawing.Size(120, 55);
             this.btnDeleteIncome.TabIndex = 18;
-            this.btnDeleteIncome.Text = "Delete Income";
+            this.btnDeleteIncome.Text = "Delete";
             this.btnDeleteIncome.UseVisualStyleBackColor = false;
             this.btnDeleteIncome.Click += new System.EventHandler(this.btnDeleteIncome_Click);
+            // 
+            // btnAddIncome
+            // 
+            this.btnAddIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(205)))), ((int)(((byte)(150)))));
+            this.btnAddIncome.Font = new System.Drawing.Font("Microsoft PhagsPa", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddIncome.ForeColor = System.Drawing.Color.White;
+            this.btnAddIncome.Location = new System.Drawing.Point(755, 182);
+            this.btnAddIncome.Margin = new System.Windows.Forms.Padding(1);
+            this.btnAddIncome.Name = "btnAddIncome";
+            this.btnAddIncome.Size = new System.Drawing.Size(120, 55);
+            this.btnAddIncome.TabIndex = 19;
+            this.btnAddIncome.Text = "Add";
+            this.btnAddIncome.UseVisualStyleBackColor = false;
+            this.btnAddIncome.Click += new System.EventHandler(this.btnAddIncome_Click);
+            // 
+            // rbAll
+            // 
+            this.rbAll.AutoSize = true;
+            this.rbAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.rbAll.Font = new System.Drawing.Font("Microsoft PhagsPa", 16.2F);
+            this.rbAll.ForeColor = System.Drawing.Color.White;
+            this.rbAll.Location = new System.Drawing.Point(371, 189);
+            this.rbAll.Name = "rbAll";
+            this.rbAll.Size = new System.Drawing.Size(68, 40);
+            this.rbAll.TabIndex = 21;
+            this.rbAll.Text = "All";
+            this.rbAll.UseVisualStyleBackColor = false;
+            // 
+            // rbThisMonth
+            // 
+            this.rbThisMonth.AutoSize = true;
+            this.rbThisMonth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.rbThisMonth.Font = new System.Drawing.Font("Microsoft PhagsPa", 16.2F);
+            this.rbThisMonth.ForeColor = System.Drawing.Color.White;
+            this.rbThisMonth.Location = new System.Drawing.Point(477, 189);
+            this.rbThisMonth.Name = "rbThisMonth";
+            this.rbThisMonth.Size = new System.Drawing.Size(236, 40);
+            this.rbThisMonth.TabIndex = 22;
+            this.rbThisMonth.Text = "This month only";
+            this.rbThisMonth.UseVisualStyleBackColor = false;
             // 
             // ViewIncome
             // 
@@ -138,6 +181,9 @@ namespace CostTracker
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1262, 753);
+            this.Controls.Add(this.rbThisMonth);
+            this.Controls.Add(this.rbAll);
+            this.Controls.Add(this.btnAddIncome);
             this.Controls.Add(this.btnDeleteIncome);
             this.Controls.Add(this.btnLoadIncome);
             this.Controls.Add(this.dgvIncome);
@@ -155,6 +201,7 @@ namespace CostTracker
             ((System.ComponentModel.ISupportInitialize)(this.pbLogout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvIncome)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -167,5 +214,8 @@ namespace CostTracker
         private System.Windows.Forms.DataGridView dgvIncome;
         private System.Windows.Forms.Button btnLoadIncome;
         private System.Windows.Forms.Button btnDeleteIncome;
+        private System.Windows.Forms.Button btnAddIncome;
+        private System.Windows.Forms.RadioButton rbAll;
+        private System.Windows.Forms.RadioButton rbThisMonth;
     }
 }

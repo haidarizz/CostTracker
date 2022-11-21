@@ -23,7 +23,7 @@ namespace CostTracker
             string name = Pengguna.Name;
         }
         private NpgsqlConnection conn;
-        string connstring = "Host=Localhost;Port=5432;Username=postgres;Password=junpro7;Database=CostTracker";
+        string connstring = "Host=database-1.c3sblevz37wv.ap-northeast-1.rds.amazonaws.com;Port=5432;Username=postgres;Password=collegebicycle;Database=CostTracker";
         public DataTable dt;
         public static NpgsqlCommand cmd;
         private string sql = null;
@@ -59,19 +59,46 @@ namespace CostTracker
         {
             try
             {
-                conn.Open();
-                dgvExpense.DataSource = null;
-                sql = "select * from tb_outcome where id_user = '" + Pengguna.ID_user + "'";
-                cmd = new NpgsqlCommand(sql, conn);
-                dt = new DataTable();
-                NpgsqlDataReader rd = cmd.ExecuteReader();
-                dt.Load(rd);
-                dgvExpense.DataSource = dt;
-                conn.Close();
+                if (rbThisMonth.Checked)
+                {
+                    conn.Open();
+                    dgvExpense.DataSource = null;
+                    sql = "select * from tb_outcome where id_user = '" + Pengguna.ID_user + "' and EXTRACT(MONTH FROM out_date) = EXTRACT(MONTH FROM CURRENT_TIMESTAMP)";
+                    cmd = new NpgsqlCommand(sql, conn);
+                    dt = new DataTable();
+                    NpgsqlDataReader rd = cmd.ExecuteReader();
+                    dt.Load(rd);
+                    dgvExpense.DataSource = dt;
+                    conn.Close();
+                }
+                else if (rbAll.Checked)
+                {
+                    conn.Open();
+                    dgvExpense.DataSource = null;
+                    sql = "select * from tb_outcome where id_user = '" + Pengguna.ID_user + "'";
+                    cmd = new NpgsqlCommand(sql, conn);
+                    dt = new DataTable();
+                    NpgsqlDataReader rd = cmd.ExecuteReader();
+                    dt.Load(rd);
+                    dgvExpense.DataSource = dt;
+                    conn.Close();
+                }
+                else
+                {
+                    conn.Open();
+                    dgvExpense.DataSource = null;
+                    sql = "select * from tb_outcome where id_user = '" + Pengguna.ID_user + "'";
+                    cmd = new NpgsqlCommand(sql, conn);
+                    dt = new DataTable();
+                    NpgsqlDataReader rd = cmd.ExecuteReader();
+                    dt.Load(rd);
+                    dgvExpense.DataSource = dt;
+                    conn.Close();
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error:" + ex.Message, "FAIL!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error:" + ex.Message, "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -87,10 +114,10 @@ namespace CostTracker
         {
             if (r == null)
             {
-                MessageBox.Show("Mohon pilih baris data yang akan diupdate", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Please select the data row to be updated", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            if (MessageBox.Show("Apakah benar anda ingin nenghapus data dengan ID: " + r.Cells["id_outcome"].Value.ToString() + " ?", "Hapus data terkonfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+            if (MessageBox.Show("Is it true that you want to delete data with ID: " + r.Cells["id_outcome"].Value.ToString() + " ?", "Delete confirmed data", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
             {
                 conn.Open();
                 sql = @"select * from st_delete_outcome(:id_outcome)";
@@ -98,12 +125,19 @@ namespace CostTracker
                 cmd.Parameters.AddWithValue("id_outcome", r.Cells["id_outcome"].Value.ToString());
                 if ((int)cmd.ExecuteScalar() == 1)
                 {
-                    MessageBox.Show("Data Users Berhasil dihapus", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Selected data has been deleted successfully", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     conn.Close();
                     btnLoadExpense.PerformClick();
                     r = null;
                 }
             }
+        }
+
+        private void btnAddExpense_Click(object sender, EventArgs e)
+        {
+            AddExpenses addexpenses = new AddExpenses(Pengguna);
+            addexpenses.Show();
+            this.Hide();
         }
     }
 }
