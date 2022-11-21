@@ -97,7 +97,7 @@ namespace CostTracker
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error:" + ex.Message, "FAIL!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error:" + ex.Message, "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -113,10 +113,10 @@ namespace CostTracker
         {
             if (r == null)
             {
-                MessageBox.Show("Mohon pilih baris data yang akan diupdate", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Please select the data row to be updated", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            if (MessageBox.Show("Apakah benar anda ingin nenghapus data dengan ID: " + r.Cells["id_income"].Value.ToString() + " ?", "Hapus data terkonfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+            if (MessageBox.Show("Is it true that you want to delete data with ID: " + r.Cells["id_income"].Value.ToString() + " ?", "Delete confirmed data", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
             {
                 conn.Open();
                 sql = @"select * from st_delete_income(:id_income)";
@@ -124,7 +124,7 @@ namespace CostTracker
                 cmd.Parameters.AddWithValue("id_income", r.Cells["id_income"].Value.ToString());
                 if ((int)cmd.ExecuteScalar() == 1)
                 {
-                    MessageBox.Show("Data Users Berhasil dihapus", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Selected data has been deleted successfully", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     conn.Close();
                     btnLoadIncome.PerformClick();
                     r = null;
