@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CostTracker.exe" size="936904">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CostTracker.exe" size="936392">
       <assemblyIdentity name="CostTracker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ucv6zRCjKvaWvOoNLJVJ2XOx7iJGTiEU1kC7TE/PtZM=</dsig:DigestValue>
+        <dsig:DigestValue>/cHsVks3w3saxtl7OWMWV2W20b3u0b4V6YRrW9aqWBA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
