@@ -62,7 +62,7 @@ namespace CostTracker
                 {
                     conn.Open();
                     dgvIncome.DataSource = null;
-                    sql = "select * from tb_income where id_user = '" + Pengguna.ID_user + "' and EXTRACT(MONTH FROM out_date) = EXTRACT(MONTH FROM CURRENT_TIMESTAMP)";
+                    sql = "select * from tb_income where id_user = '" + Pengguna.ID_user + "' and EXTRACT(MONTH FROM in_date) = EXTRACT(MONTH FROM CURRENT_TIMESTAMP)";
                     cmd = new NpgsqlCommand(sql, conn);
                     dt = new DataTable();
                     NpgsqlDataReader rd = cmd.ExecuteReader();
